@@ -1,0 +1,37 @@
+package day09;
+
+public class ClassEx01 {
+
+	public static void main(String[] args) {
+		Point p = new Point();
+		p.print();
+		p.x=1;
+		p.y=3;
+		p.print();
+
+	}
+	
+
+}
+
+//(0,0)
+class Point{
+	//멤버변수 자리
+	//멤버변수는 일반적으로 private 사용
+	private int x;
+	private int y;
+	//print
+	//같은 클래스의 멤버변수는 모든 메서드에서 공유된다.
+	public void print() {
+		System.out.println("("+ x+","+y+")");
+	}
+	
+}
+
+
+
+
+
+
+
+

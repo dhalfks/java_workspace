@@ -1,0 +1,59 @@
+package day10;
+
+public class Class03 {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+		TV tv = new TV("LG");
+		tv.isPower();
+	}
+
+}
+
+class TV{
+	/* 멤버변수 : name, power, channel, vol
+	 * 메서드 : 전원, 채널up / down, vol up/down
+	 * */
+	private String name; //null
+	private boolean power; //false
+	private int channel; //0
+	private int vol; //0
+
+	//생성자
+	public TV() {}
+	public TV(String name) {
+		this.name = name;
+	}
+	
+	//메서드
+	public void isPower() {
+		if(!power) {
+			power = true;
+			System.out.println("TV전원이 켜졌습니다.");
+		}else {
+			power = false;
+			System.out.println("TV전원이 꺼졌습니다.");
+		}
+	}
+	
+	//channel 상태 
+	public void channelUp() {
+		channel++;
+		System.out.println("현재채널: "+channel);
+	}
+	public void channelDown() {
+		channel--;
+		System.out.println("현재채널: "+channel);
+	}
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+	
+}

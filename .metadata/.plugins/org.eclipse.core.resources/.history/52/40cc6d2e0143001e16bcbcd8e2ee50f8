@@ -1,0 +1,16 @@
+package day08;
+
+public class Ex01 {
+
+	public static void main(String[] args) {
+		int a[] = {100, 200};
+		int b = 200;
+		add(a,b);
+		System.out.println(a);
+		System.out.println(b);
+	}
+	public static void add(int a[], int b) {
+		a[a.length-1] = 300;
+	}
+
+}

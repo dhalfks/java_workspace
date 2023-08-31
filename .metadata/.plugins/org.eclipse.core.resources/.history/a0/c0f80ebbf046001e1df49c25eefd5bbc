@@ -1,0 +1,39 @@
+package day11;
+
+/* - EzenComputer 클래스 생성
+ * - 학생의 기본정보 : 이름, 생년월일, 나이, 전화번호
+ * - 학원 정보 : 학원이름 ="EZEN", 지점
+ * - 수강정보 : 수강과목, 기간(2023-08-16~2024-03-14)
+ * 
+ * ex) 홍길동, 990101, 24, 010-1111-1111 	=> 학생정보 출력 
+ *    EZEN, 인천지점						=> 학원정보 출력
+ *    자바(6개월), DB(1개월), html(2개월)	=> 수강정보 출력
+ *    
+ * 기능
+ * - 학생정보출력, 학원정보출력, 수강정보출력
+ * - 학생의 수강정보를 추가하는 기능.
+ * */
+
+public class EzenComputer {
+	//final => 변경불가능한
+	//멤버변수 선언
+	private String name;
+	private String birth;
+	private int age;
+	private String phone;
+	public final static String company = "EZEN";
+	private String branch;
+	//수강정보 => 한사람이 여러과목을 수강
+	private String[] course = new String[5];  //수강과목 5개
+	private String[] period = new String[5];  //수강기간 5개
+	
+	private int cnt; // 배열의 index 처리를 위한 변수
+	
+	//생성자
+	
+	//메서드 (출력, 수강정보를 추가)
+	
+	//getter / setter
+	
+	
+}

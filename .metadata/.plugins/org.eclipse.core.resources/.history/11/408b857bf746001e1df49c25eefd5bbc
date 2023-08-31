@@ -1,0 +1,38 @@
+package day11;
+
+public class EzenComputerMain {
+
+	public static void main(String[] args) {
+		//EzenComputer의 객체 생성 후 출력
+		EzenComputer ez = new EzenComputer("홍길동", "010-1111-1111", "인천");
+		ez.printInfo();
+		ez.printCompany();
+		ez.insertCourse("java", "8/16~3/14");
+		ez.insertCourse("DB", "1개월");
+		ez.printCourse();
+		System.out.println("---------------");
+		EzenComputer ez1 = new EzenComputer("김영이", "990101", 24, "1111", "서울");
+		ez1.printInfo();
+		ez1.insertCourse("java", "8/16~3/14");
+		ez1.insertCourse("html", "2개월");
+		ez1.printCourse();
+		
+		/* 학생클래스를 담을수 있는 배열을 생성 후 
+		 * 5명의 학생을 등록
+		 * 
+		 * */
+		EzenComputer[] std = new EzenComputer[7];
+		std[0]= new EzenComputer("영이", "980101", 25, "2222", "인천");
+		std[1]= new EzenComputer("순이", "980201", 25, "3333", "서울");
+		std[2]= new EzenComputer("철이", "980301", 25, "4444", "인천");
+		std[3]= new EzenComputer("철수", "980401", 25, "5555", "서울");
+		std[4]= new EzenComputer("영철", "980501", 25, "6666", "서울");
+		std[5] = ez;
+		std[6] = ez1;
+		std[0].insertCourse("DB", "1개월");
+		std[1].insertCourse("html", "2개월");
+		std[1].insertCourse("java", "6개월");
+		
+	}
+
+}

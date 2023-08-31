@@ -1,0 +1,19 @@
+package day11;
+
+public class EzenComputerMain {
+
+	public static void main(String[] args) {
+		//EzenComputer의 객체 생성 후 출력
+		EzenComputer ez = new EzenComputer("홍길동", "010-1111-1111", "인천");
+		ez.printInfo();
+		ez.printCompany();
+		ez.insertCourse("java", "8/16~3/14");
+		ez.insertCourse("DB", "1개월");
+		ez.printCourse();
+		
+		EzenComputer ez1 = new EzenComputer("김영이", "990101", 24, "1111", "서울");
+		ez1.printInfo();
+		ez1.printCourse();
+	}
+
+}

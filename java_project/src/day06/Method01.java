@@ -16,10 +16,12 @@ public class Method01 {
 		 * 메서드 선언 위치
 		 * 클래스 안, 다른 메서드 밖
 		 * */
-		int sum = sum(3,5);
+		Method01 m = new Method01();
+		
+		int sum = m.sum(3,5);
 		System.out.println(sum);
 		
-		int sum1 = sum(sum, 2);
+		int sum1 = m.sum(sum, 2);
 		System.out.println(sum1);
 		
 		int mul = mul(3, 5);

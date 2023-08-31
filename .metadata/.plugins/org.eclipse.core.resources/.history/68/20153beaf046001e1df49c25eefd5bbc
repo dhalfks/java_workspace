@@ -1,0 +1,10 @@
+package day11;
+
+public class EzenComputerMain {
+
+	public static void main(String[] args) {
+		//EzenComputer의 객체 생성 후 출력
+
+	}
+
+}
